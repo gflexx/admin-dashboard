@@ -8,7 +8,7 @@ export default function Home() {
   }
   return (
     <>
-      <p className="text-c2xlnter">Dashboard</p>
+      <p className="text-2xl font-bold">Dashboard</p>
       <Button onClick={() => btnClicked()}>CLick Me</Button>
     </>
   );
