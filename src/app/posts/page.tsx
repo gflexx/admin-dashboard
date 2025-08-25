@@ -1,9 +1,14 @@
 import React from 'react'
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Posts',
+};
 
 function page() {
   return (
     <div>
-        <p className="text-2xl font-bold">Posts</p>
+        <p className="text-2xl">Posts</p>
     </div>
   )
 }

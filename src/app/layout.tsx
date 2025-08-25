@@ -34,7 +34,7 @@ export default function RootLayout({
           <div className="hidden md:block h-[100vh] md:w-1/6">
             <Sidebar />
           </div>
-          <div className="w-full p-2">{children}</div>
+          <div className="w-full p-5">{children}</div>
         </div>
       </body>
     </html>
