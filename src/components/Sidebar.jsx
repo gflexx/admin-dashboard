@@ -20,15 +20,15 @@ function Sidebar() {
                 <CommandGroup heading="Suggestions" className='space-y-2'>
                     <CommandItem>
                         <Sheet className='mr-2' />
-                        <Link href='/stock'>Stock</Link>
+                        <Link href='stock'>Stock</Link>
                     </CommandItem>
                     <CommandItem>
                         <PackageSearch className='mr-2' />
-                        <Link href='/products'>Products</Link>
+                        <Link href='products'>Products</Link>
                     </CommandItem>
                     <CommandItem>
                         <Newspaper className='mr-2' />
-                        <Link href='/posts'>Posts</Link>
+                        <Link href='posts'>Posts</Link>
                     </CommandItem>
                 </CommandGroup>
                 <CommandSeparator />

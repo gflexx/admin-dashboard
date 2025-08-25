@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import logo from "../../assets/Group 1686551587.svg";
+import logo from "../../assets/25433125.jpeg";
 import profileImg from "../../assets/1681073508132.jpg";
 import Image from "next/image";
 import { Avatar, AvatarImage } from "./ui/avatar";
@@ -17,9 +17,8 @@ function Navbar() {
   return (
     <div className="bg-primary dark:bg-slate-700 text-white py-3 px-5 flex justify-between items-center">
       <Link href="/">
-        <Image src={logo} alt="logo" width={15} className="rounded-full" />
+        <Image src={logo} alt="logo" width={30} className="rounded-full" />
       </Link>
-
       <DropdownMenu>
         <DropdownMenuTrigger className="focus:outline-none">
           <Avatar>

@@ -30,7 +30,7 @@ function PostTable({ limit, title }: PostTableProps) {
 
   return (
     <div className="">
-      <h3 className="text-2xl mb-4 font-semibold">{title}</h3>
+      <h3 className="text-lg mb-4 font-semibold">{title}</h3>
       <Table>
         <TableCaption>A list of recent posts</TableCaption>
         <TableHeader>

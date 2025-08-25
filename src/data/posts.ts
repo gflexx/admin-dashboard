@@ -118,7 +118,7 @@ const posts: Post[] = [
     id: "8",
     title: "Artificial Neural Networks: Mimicking the Brain",
     body: "Artificial Neural Networks (ANNs) are inspired by the...",
-    author: "Isabella Hamisi",
+    author: "Ray C",
     date: "2024-05-15",
     comments: [
       {

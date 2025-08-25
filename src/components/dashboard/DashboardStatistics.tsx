@@ -19,7 +19,7 @@ function DashboardStatistics() {
         />
         <DashboardCard
           title="Products"
-          count={37}
+          count={7}
           icon={<PackageSearch className="text-slate-500" size={45} />}
         />
         <DashboardCard
@@ -29,12 +29,12 @@ function DashboardStatistics() {
         />
         <DashboardCard
           title="Users"
-          count={22}
+          count={12}
           icon={<UserCircle2 className="text-slate-500" size={45} />}
         />
         <DashboardCard
           title="Comments"
-          count={45}
+          count={15}
           icon={<MessageCircleMore className="text-slate-500" size={45} />}
         />
       </div>
