@@ -1,15 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import DashboardStatistics from "@/components/dashboard/DashboardStatistics";
 
 export default function Home() {
-  function btnClicked() {
-    console.log("Clicked");
-  }
   return (
     <>
-      <p className="text-2xl font-bold">Dashboard</p>
-      <Button onClick={() => btnClicked()}>CLick Me</Button>
+      <div className="space-y-5">
+        <DashboardStatistics/>
+      </div>
     </>
   );
 }

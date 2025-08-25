@@ -15,7 +15,7 @@ import {
 
 function Navbar() {
   return (
-    <div className="bg-primary dark:bg-slate-700 text-white py-3 px-5 flex justify-between mb-3">
+    <div className="bg-primary dark:bg-slate-700 text-white py-3 px-5 flex justify-between items-center">
       <Link href="/">
         <Image src={logo} alt="logo" width={15} className="rounded-full" />
       </Link>
@@ -26,16 +26,21 @@ function Navbar() {
             <AvatarImage src={profileImg.src} />
           </Avatar>
         </DropdownMenuTrigger>
-        <DropdownMenuContent>
+        <DropdownMenuContent className="mr-3">
           <DropdownMenuLabel>My Account</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
             <Link href="account">Profile</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
+            <Link href="/">Dashboard</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
             <Link href="subscription">Subscriptions</Link>
           </DropdownMenuItem>
-          <DropdownMenuItem>Logout</DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="auth">Logout</Link>
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
