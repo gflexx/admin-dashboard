@@ -17,7 +17,7 @@ function DashboardCard({title, count, icon}: DashboardCardProps) {
         </h3>
         <div className="flex gap-5 justify-center items-center">
           {icon}
-          <h3 className="text-5xl text-center font-bold text-slate-500 dark:text-slate-200">
+          <h3 className="text-3xl text-center font-bold text-slate-500 dark:text-slate-200">
             {count}
           </h3>
         </div>

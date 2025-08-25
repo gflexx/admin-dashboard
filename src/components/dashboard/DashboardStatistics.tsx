@@ -15,27 +15,27 @@ function DashboardStatistics() {
         <DashboardCard
           title="Stock"
           count={3}
-          icon={<Sheet className="text-slate-500" size={64} />}
+          icon={<Sheet className="text-slate-500" size={45} />}
         />
         <DashboardCard
           title="Products"
           count={37}
-          icon={<PackageSearch className="text-slate-500" size={64} />}
+          icon={<PackageSearch className="text-slate-500" size={45} />}
         />
         <DashboardCard
           title="Posts"
           count={17}
-          icon={<Newspaper className="text-slate-500" size={64} />}
+          icon={<Newspaper className="text-slate-500" size={45} />}
         />
         <DashboardCard
           title="Users"
           count={22}
-          icon={<UserCircle2 className="text-slate-500" size={64} />}
+          icon={<UserCircle2 className="text-slate-500" size={45} />}
         />
         <DashboardCard
           title="Comments"
           count={45}
-          icon={<MessageCircleMore className="text-slate-500" size={64} />}
+          icon={<MessageCircleMore className="text-slate-500" size={45} />}
         />
       </div>
     </div>
