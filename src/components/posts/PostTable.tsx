@@ -53,7 +53,7 @@ function PostTable({ limit, title }: PostTableProps) {
               </TableCell>
               <TableCell>
                 <Link href={`posts/edit/${post.id}`}>
-                    <Button className="bg-blue-500 hover:bg-blue-700">View</Button>
+                    <Button className="bg-blue-500 hover:bg-blue-700 hover:cursor-pointer">View</Button>
                 </Link>
               </TableCell>
             </TableRow>
