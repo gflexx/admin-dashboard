@@ -20,7 +20,7 @@ interface PostTableProps {
 }
 
 function PostTable({ limit, title }: PostTableProps) {
-  // sort posts in dec order based on date
+  // sort posts in desc order based on date
   const sortedPosts: Post[] = [...posts].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
