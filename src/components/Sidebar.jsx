@@ -20,22 +20,22 @@ function Sidebar() {
                 <CommandGroup heading="Suggestions" className='space-y-2'>
                     <CommandItem>
                         <Sheet className='mr-2' />
-                        <Link href='stock'>Stock</Link>
+                        <Link href='/stock'>Stock</Link>
                     </CommandItem>
                     <CommandItem>
                         <PackageSearch className='mr-2' />
-                        <Link href='products'>Products</Link>
+                        <Link href='/products'>Products</Link>
                     </CommandItem>
                     <CommandItem>
                         <Newspaper className='mr-2' />
-                        <Link href='posts'>Posts</Link>
+                        <Link href='/posts'>Posts</Link>
                     </CommandItem>
                 </CommandGroup>
                 <CommandSeparator />
                 <CommandGroup heading="Account " className='space-y-2'>
                     <CommandItem>
                         <CircleUser className='mr-2' />
-                        <Link href='account'>Profile</Link>
+                        <Link href='/account'>Profile</Link>
                     </CommandItem>
                     <CommandItem>
                         <LayoutDashboard className='mr-2' />
@@ -43,11 +43,11 @@ function Sidebar() {
                     </CommandItem>
                     <CommandItem>
                         <CalendarSync className='mr-2' />
-                        <Link href='subscription'>Subscriptions</Link>
+                        <Link href='/subscription'>Subscriptions</Link>
                     </CommandItem>
                     <CommandItem>
                         <LogOut className='mr-2' />
-                        <Link href='auth'>Logout</Link>
+                        <Link href='/auth'>Logout</Link>
                     </CommandItem>
                 </CommandGroup>
             </CommandList>
