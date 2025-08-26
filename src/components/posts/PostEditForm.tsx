@@ -16,6 +16,7 @@ import {
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
+import { toast } from "sonner"
 
 interface PostEditFormProps {
   post: Post;
@@ -49,7 +50,7 @@ function PostEditForm({ post }: PostEditFormProps) {
   });
 
   const submitHandler = (data: z.infer<typeof formSchema>) => {
-    console.log(data);
+    toast(`Updated ${data.title}.`)
   };
 
   return (
@@ -135,7 +136,7 @@ function PostEditForm({ post }: PostEditFormProps) {
               </FormItem>
             )}
           />
-          <Button className="w-full dark:bg-slate-800 dark:text-white">
+          <Button className="w-full dark:bg-slate-800 dark:text-white hover:cursor-pointer">
             Submit
           </Button>
         </form>
