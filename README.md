@@ -14,4 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 ## Preview
-![Description](screenshots/img.png)
+Light theme
+![Description](screenshots/light.png)
+Dark theme
+![Description](screenshots/dark.png)

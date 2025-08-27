@@ -10,7 +10,7 @@ interface DashboardCardProps {
 
 function DashboardCard({title, count, icon}: DashboardCardProps) {
   return (
-    <Card className="bg-slate-100 dark:bg-slate-800 p-2 pb-0">
+    <Card className="bg-slate-100 dark:bg-slate-800 p-2">
       <CardContent>
         <h3 className="text-2xl text-center mb-2 font-bold text-slate-500 dark:text-slate-200">
           {title}

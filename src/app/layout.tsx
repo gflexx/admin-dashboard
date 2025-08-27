@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          enableSystem={false}
+          enableSystem={true}
           defaultTheme="light"
           storageKey="dashboard-theme"
         >
