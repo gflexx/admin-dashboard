@@ -1,14 +1,15 @@
 import React from 'react'
 import { Metadata } from 'next';
+import AuthTabs from '@/components/auth/AuthTabs';
  
 export const metadata: Metadata = {
-  title: 'Profile',
+  title: 'Auth',
 };
 
 function page() {
   return (
-    <div>
-        <h3 className="text-2xl">Auth</h3>
+    <div className=''>
+        <AuthTabs/>
     </div>
   )
 }
