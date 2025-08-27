@@ -12,6 +12,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import ThemeToggler from "./ThemeToggler";
 
 function Navbar() {
   return (
@@ -19,29 +20,32 @@ function Navbar() {
       <Link href="/">
         <Image src={logo} alt="logo" width={30} className="rounded-full" />
       </Link>
-      <DropdownMenu>
-        <DropdownMenuTrigger className="focus:outline-none">
-          <Avatar>
-            <AvatarImage src={profileImg.src} />
-          </Avatar>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent className="mr-3">
-          <DropdownMenuLabel>My Account</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem>
-            <Link href="account">Profile</Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link href="/">Dashboard</Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link href="subscription">Subscriptions</Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link href="auth">Logout</Link>
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
+      <div className="flex items-center">
+        <ThemeToggler />
+        <DropdownMenu>
+          <DropdownMenuTrigger className="focus:outline-none">
+            <Avatar>
+              <AvatarImage src={profileImg.src} />
+            </Avatar>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="mr-3">
+            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>
+              <Link href="account">Profile</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="/">Dashboard</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="subscription">Subscriptions</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link href="auth">Logout</Link>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
     </div>
   );
 }
