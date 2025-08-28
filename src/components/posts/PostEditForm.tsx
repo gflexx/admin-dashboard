@@ -71,7 +71,7 @@ function PostEditForm({ post }: PostEditFormProps) {
                 <FormControl>
                   <Input
                     className="bg-slate-100 dark:bg-slate-500 border-0 focus-visible:ring-0 text-black dark:text-white focus-visible:ring-offset-0"
-                    placeholder="Post Text"
+                    placeholder="Post Title"
                     {...field}
                   />
                 </FormControl>
@@ -109,7 +109,7 @@ function PostEditForm({ post }: PostEditFormProps) {
                 <FormControl>
                   <Input
                     className="bg-slate-100 dark:bg-slate-500 border-0 focus-visible:ring-0 text-black dark:text-white focus-visible:ring-offset-0"
-                    placeholder="Post Text"
+                    placeholder="Post Author"
                     {...field}
                   />
                 </FormControl>
@@ -128,7 +128,7 @@ function PostEditForm({ post }: PostEditFormProps) {
                 <FormControl>
                   <Input
                     className="bg-slate-100 dark:bg-slate-500 border-0 focus-visible:ring-0 text-black dark:text-white focus-visible:ring-offset-0"
-                    placeholder="Post Text"
+                    placeholder="Post Date"
                     {...field}
                   />
                 </FormControl>
