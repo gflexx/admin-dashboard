@@ -55,7 +55,7 @@ function Registerform() {
       <CardHeader>
         <h3 className="text-2xl">Register your account</h3>
         <CardDescription>
-            <p>Create your credentials to access to your account.</p>
+          <p>Sign up by adding the fields bellow.</p>
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -115,7 +115,7 @@ function Registerform() {
                     <Input
                       className="bg-slate-100 dark:bg-slate-500 border-0 focus-visible:ring-0 text-black dark:text-white focus-visible:ring-offset-0"
                       type="password"
-                      placeholder="Enter your password"
+                      placeholder="Confirm your password"
                       {...field}
                     />
                   </FormControl>
