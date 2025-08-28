@@ -15,6 +15,8 @@ import {
 import { Input } from "../ui/input";
 import { toast } from "sonner";
 import { Button } from "../ui/button";
+import { Card, CardContent, CardDescription, CardHeader } from "../ui/card";
+import { useRouter } from "next/navigation";
 
 // z form schema for validation
 const formSchema = z.object({
@@ -27,6 +29,8 @@ const formSchema = z.object({
 });
 
 function LoginForm() {
+  const router = useRouter();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -37,47 +41,71 @@ function LoginForm() {
 
   const submitHandler = (data: z.infer<typeof formSchema>) => {
     toast(`Logged in as: ${data.email}.`);
+    router.push("/");
   };
   return (
-    <div className="mt-6">
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(submitHandler)} className="space-y-4">
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Email</FormLabel>
-                <FormControl>
-                  <Input placeholder="Enter your email" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="password"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Password</FormLabel>
-                <FormControl>
-                  <Input
-                    type="password"
-                    placeholder="Enter your password"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <Button type="submit" className="w-full mt-6">
-            Login
-          </Button>
-        </form>
-      </Form>
-    </div>
+    <Card className="mt-6">
+      <CardHeader>
+        <h3 className="text-2xl">Login to your account</h3>
+        <CardDescription>
+          <p>Use your credentials to login to your account.</p>
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <Form {...form}>
+          <form
+            onSubmit={form.handleSubmit(submitHandler)}
+            className="space-y-4"
+          >
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    Email: <span>*</span>
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      className="bg-slate-100 dark:bg-slate-500 border-0 focus-visible:ring-0 text-black dark:text-white focus-visible:ring-offset-0"
+                      placeholder="Enter your email"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="password"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>
+                    Password: <span>*</span>
+                  </FormLabel>
+                  <FormControl>
+                    <Input
+                      className="bg-slate-100 dark:bg-slate-500 border-0 focus-visible:ring-0 text-black dark:text-white focus-visible:ring-offset-0"
+                      type="password"
+                      placeholder="Enter your password"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <Button
+              type="submit"
+              className="w-full mt-6 dark:bg-slate-800 dark:text-white hover:cursor-pointer"
+            >
+              Login
+            </Button>
+          </form>
+        </Form>
+      </CardContent>
+    </Card>
   );
 }
 
